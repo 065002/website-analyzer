@@ -1014,10 +1014,10 @@ with dl2:
         file_name=f"competitor_summary_{datetime.datetime.utcnow().strftime('%Y%m%d_%H%M')}.csv",
         mime="text/csv")
 
-elif go_btn and mode == "Competitor Analysis" and len(comp_urls) < 2:
+if go_btn and mode == "Competitor Analysis" and len(comp_urls) < 2:
 st.warning("Please enter at least 2 URLs (your site + 1 competitor) for competitor analysis.")
 
-elif go_btn and mode == "Single Site" and not url_input.strip():
+if go_btn and mode == "Single Site" and not url_input.strip():
 st.warning("Please enter a URL to analyse.")
 
 # ── Empty state ───────────────────────────────────────────────────────────────
