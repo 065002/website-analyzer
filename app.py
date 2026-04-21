@@ -361,15 +361,15 @@ COLORS = ["#38bdf8", "#a78bfa", "#34d399", "#fbbf24", "#f87171", "#fb923c"]
 # ── Utility helpers ────────────────────────────────────────────────────────────
 
 def score_cls(s):
-return "score-good" if s >= 70 else ("score-mid" if s >= 40 else "score-bad")
+ return "score-good" if s >= 70 else ("score-mid" if s >= 40 else "score-bad")
 
 def badge(text, kind="cyan"):
-return f'<span class="badge bg-{kind}">{text}</span>'
+ return f'<span class="badge bg-{kind}">{text}</span>'
 
 def tech_badges(items, kind="cyan"):
-if not items:
+ if not items:
     return '<span style="color:#334155;font-size:0.8rem;">None detected</span>'
-return "".join(badge(i, kind) for i in items)
+ return "".join(badge(i, kind) for i in items)
 
 def render_score_card(value, label, sub="", accent="linear-gradient(90deg,#38bdf8,#818cf8)"):
 cls = score_cls(int(value)) if isinstance(value, (int, float)) else ""
