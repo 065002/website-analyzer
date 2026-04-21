@@ -667,7 +667,7 @@ seo_fig.update_layout(**layout, height=300)
 st.plotly_chart(seo_fig, use_container_width=True, config={"displayModeBar": False})
 
             # Details grid
-            c_l, c_r = st.columns(2)
+c_l, c_r = st.columns(2)
             with c_l:
                 st.markdown('<p class="sec-head">Page Metadata</p>', unsafe_allow_html=True)
                 st.markdown(f"**Title** `({seo.get('title_length',0)} chars)`")
