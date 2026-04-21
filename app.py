@@ -651,7 +651,7 @@ if go_btn and mode == "Single Site" and url_input.strip():
                 textposition="outside",
                 textfont=dict(family="DM Mono", size=11),
             ))
-           layout = PLOTLY_LAYOUT.copy()
+layout = PLOTLY_LAYOUT.copy()
 
 layout["title"] = dict(
     text="SEO Signal Scores",
