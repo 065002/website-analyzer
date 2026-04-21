@@ -689,9 +689,9 @@ with c_r:
 
 if seo.get("structured_data"):
         st.markdown('<p class="sec-head">JSON-LD Structured Data</p>', unsafe_allow_html=True)
-            for i, sd in enumerate(seo["structured_data"]):
-                with st.expander(f"Block {i+1} — {sd.get('@type','Unknown')}"):
-                    st.json(sd)
+        for i, sd in enumerate(seo["structured_data"]):
+            with st.expander(f"Block {i+1} — {sd.get('@type','Unknown')}"):
+              st.json(sd)
 
 # Tech Stack ───────────────────────────────────────────────────────────
 with t_tech:
