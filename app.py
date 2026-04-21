@@ -662,12 +662,11 @@ if go_btn and mode == "Single Site" and url_input.strip():
                 textposition="outside",
                 textfont=dict(family="DM Mono", size=11),
             ))
-            seo_fig.update_layout(
-                **PLOTLY_LAYOUT,
-                height=300,
-                xaxis=dict(range=[0, 120], gridcolor="rgba(100,116,139,0.08)"),
-                title=dict(text="SEO Signal Scores", font=dict(size=13, color="#64748b"), x=0),
-            )
+            seo_fig.update_layout(layout = PLOTLY_LAYOUT.copy()
+layout["title"] = dict(text="SEO Signal Scores", font=dict(size=13, color="#64748b"), x=0)
+
+seo_fig.update_layout(**layout)
+                
             st.plotly_chart(seo_fig, use_container_width=True, config={"displayModeBar": False})
 
             # Details grid
