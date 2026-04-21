@@ -384,31 +384,18 @@ def make_gauge(value, title, color):
     fig = go.Figure(go.Indicator(
         mode="gauge+number",
         value=value,
-        title={"text": title, "font": {"size": 13, "color": "#94a3b8", "family": "Outfit"}},
-        number={"font": {"size": 32, "color": color, "family": "DM Mono"}},
-        gauge={
-            "axis": {"range": [0, 100], "tickcolor": "#334155", "tickfont": {"size": 9}},
-            "bar":  {"color": color, "thickness": 0.25},
-            "bgcolor": "rgba(30,41,59,0.6)",
-            "bordercolor": "rgba(100,116,139,0.15)",
-            "steps": [
-                {"range": [0,  40], "color": "rgba(248,113,113,0.08)"},
-                {"range": [40, 70], "color": "rgba(251,191,36,0.08)"},
-                {"range": [70,100], "color": "rgba(52,211,153,0.08)"},
-            ],
-            "threshold": {
-                "line": {"color": color, "width": 2},
-                "thickness": 0.8,
-                "value": value,
-            },
-        },
+        title={"text": title},
+        number={"font": {"size": 32, "color": color}},
+        gauge={"axis": {"range": [0, 100]}}
     ))
+
     layout = PLOTLY_LAYOUT.copy()
-layout = PLOTLY_LAYOUT.copy()   
-layout["margin"] = dict(l=20, r=20, t=30, b=10)
+    layout["margin"] = dict(l=20, r=20, t=30, b=10)
 
-fig.update_layout(**layout, height=200)
+    fig.update_layout(**layout, height=200)
 
+    return fig
+   
 def make_radar(radar_data):
     dims = [d["dimension"] for d in radar_data[0]["dimensions"]]
     fig = go.Figure()
