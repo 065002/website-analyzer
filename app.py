@@ -591,7 +591,7 @@ if go_btn and mode == "Single Site" and url_input.strip():
     g1, g2, g3, g4 = st.columns(4)
     gauge_color = lambda s: "#34d399" if s >= 70 else ("#fbbf24" if s >= 40 else "#f87171")
     with g1:
-        st.plotly_chart(make_gauge(),
+        st.plotly_chart(make_gauge(overall, "Overall Score", gauge_color(overall)),
                         use_container_width=True, config={"displayModeBar": False})
     with g2:
         st.plotly_chart(make_gauge(sec_score, "Security Score", gauge_color(sec_score)),
