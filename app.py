@@ -381,7 +381,7 @@ def render_score_card(value, label, sub="", accent="linear-gradient(90deg,#38bdf
 </div>"""
 
 def make_gauge(value, title, color):
-fig = go.Figure(go.Indicator(
+ fig = go.Figure(go.Indicator(
     mode="gauge+number",
     value=value,
     title={"text": title},
@@ -397,9 +397,9 @@ fig.update_layout(**layout, height=200)
 return fig
 
 def make_radar(radar_data):
-dims = [d["dimension"] for d in radar_data[0]["dimensions"]]
-fig = go.Figure()
-for i, site in enumerate(radar_data):
+ dims = [d["dimension"] for d in radar_data[0]["dimensions"]]
+ fig = go.Figure()
+ for i, site in enumerate(radar_data):
     vals = [d["normalised"] for d in site["dimensions"]]
     vals.append(vals[0])  # close polygon
     fig.add_trace(go.Scatterpolar(
@@ -425,7 +425,7 @@ return fig
 
 
 def make_bar_comparison(comparison, metrics_to_show):
-domains = list(next(iter(comparison.values()))["values"].keys())
+ domains = list(next(iter(comparison.values()))["values"].keys())
 fig = go.Figure()
 for i, domain in enumerate(domains):
     x_labels, y_vals = [], []
@@ -449,10 +449,10 @@ return fig
 
 
 def make_score_hbar(sites):
-domains = [s["domain"] for s in sites]
-scores  = [s.get("overall_score", 0) for s in sites]
-colors  = [("#34d399" if s >= 70 else "#fbbf24" if s >= 40 else "#f87171") for s in scores]
-fig = go.Figure(go.Bar(
+ domains = [s["domain"] for s in sites]
+ scores  = [s.get("overall_score", 0) for s in sites]
+ colors  = [("#34d399" if s >= 70 else "#fbbf24" if s >= 40 else "#f87171") for s in scores]
+ fig = go.Figure(go.Bar(
     x=scores, y=domains, orientation="h",
     marker=dict(color=colors, line_width=0),
     text=scores, textposition="outside",
@@ -469,8 +469,8 @@ return fig
 
 
 def make_treemap_tech(tech_comparison):
-labels, parents, values, colors_list = ["Tech Stack"], [""], [0], ["#080b12"]
-color_map = {
+ labels, parents, values, colors_list = ["Tech Stack"], [""], [0], ["#080b12"]
+ color_map = {
     "frontend": "#38bdf8", "cms": "#a78bfa",
     "analytics": "#34d399", "hosting": "#fbbf24", "cdn": "#fb923c",
 }
@@ -510,7 +510,7 @@ st.markdown("""
 
 # ── Input panel ───────────────────────────────────────────────────────────────
 with st.container():
-st.markdown('<div class="input-shell">', unsafe_allow_html=True)
+ st.markdown('<div class="input-shell">', unsafe_allow_html=True)
 
 mode_col, _ = st.columns([2, 5])
 with mode_col:
