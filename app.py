@@ -394,8 +394,6 @@ layout["margin"] = dict(l=20, r=20, t=30, b=10)
 
 fig.update_layout(**layout, height=200)
 
-return fig
-
 def make_radar(radar_data):
  dims = [d["dimension"] for d in radar_data[0]["dimensions"]]
  fig = go.Figure()
