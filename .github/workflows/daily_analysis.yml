@@ -1,0 +1,70 @@
+name: Weekly Website Analysis
+
+on:
+  schedule:
+    - cron: "0 9 * * 1"
+  workflow_dispatch:
+    inputs:
+      target_urls:
+        description: "JSON array of URLs to analyse"
+        required: false
+        default: ""
+
+jobs:
+  analyse:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: "pip"
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Run website analysis
+        env:
+          TARGET_URLS: ${{ inputs.target_urls || secrets.TARGET_URLS || '["https://example.com"]' }}
+        run: |
+          python - <<'EOF'
+          import json, os, datetime, sys
+          sys.path.insert(0, os.getcwd())
+          from scripts.analyzer import analyze_website
+
+          urls = json.loads(os.environ.get("TARGET_URLS", '["https://example.com"]'))
+          timestamp = datetime.datetime.utcnow().strftime("%Y%m%d_%H%M%S")
+          results = []
+
+          for url in urls:
+              print(f"Analysing: {url}", flush=True)
+              try:
+                  report = analyze_website(url)
+                  results.append(report)
+                  print(f"  ✔ Score: {report.get('meta',{}).get('overall_score','N/A')}/100", flush=True)
+              except Exception as exc:
+                  print(f"  ✘ Failed: {exc}", flush=True)
+                  results.append({"url": url, "error": str(exc)})
+
+          os.makedirs("reports", exist_ok=True)
+          out_path = f"reports/analysis_{timestamp}.json"
+          with open(out_path, "w") as f:
+              json.dump(results, f, indent=2, default=str)
+          with open("reports/latest.json", "w") as f:
+              json.dump(results, f, indent=2, default=str)
+          print(f"Saved to {out_path}")
+          EOF
+
+      - name: Commit analysis report
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add reports/
+          git diff --cached --quiet || git commit -m "chore: weekly analysis $(date -u +'%Y-%m-%d')"
+          git push
