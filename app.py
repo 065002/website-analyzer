@@ -372,8 +372,8 @@ def tech_badges(items, kind="cyan"):
  return "".join(badge(i, kind) for i in items)
 
 def render_score_card(value, label, sub="", accent="linear-gradient(90deg,#38bdf8,#818cf8)"):
-cls = score_cls(int(value)) if isinstance(value, (int, float)) else ""
-return f"""
+ cls = score_cls(int(value)) if isinstance(value, (int, float)) else ""
+ return f"""
 <div class="score-card" style="--accent:{accent}">
     <div class="score-num {cls}">{value}</div>
     <div class="score-lbl">{label}</div>
