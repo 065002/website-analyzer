@@ -851,7 +851,7 @@ with t_raw:
 # ════════════════════════════════════════════════════════════════════════════════
 
 elif go_btn and mode == "Competitor Analysis" and len(comp_urls) >= 2:
-with st.spinner(f"🔬 Analysing {len(comp_urls)} sites in parallel — please wait 20–40 seconds…"):
+ with st.spinner(f"🔬 Analysing {len(comp_urls)} sites in parallel — please wait 20–40 seconds…"):
     comp_report = run_competitor_analysis(comp_urls)
 
 sites      = comp_report["sites"]
