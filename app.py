@@ -658,7 +658,6 @@ layout["title"] = dict(
     font=dict(size=13, color="#64748b"),
     x=0
 )
-
 layout["xaxis"] = dict(
     range=[0, 120],
     gridcolor="rgba(100,116,139,0.08)"
