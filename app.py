@@ -562,7 +562,7 @@ st.markdown("<hr class='divider'>", unsafe_allow_html=True)
 # ════════════════════════════════════════════════════════════════════════════════
 
 if go_btn and mode == "Single Site" and url_input.strip():
-with st.spinner("🔬 Scanning website — please wait 10–25 seconds…"):
+ with st.spinner("🔬 Scanning website — please wait 10–25 seconds…"):
     report = analyze_website(url_input.strip())
 
 meta        = report.get("meta", {})
