@@ -664,7 +664,7 @@ layout["xaxis"] = dict(
 )
 
 seo_fig.update_layout(**layout, height=300)
-            st.plotly_chart(seo_fig, use_container_width=True, config={"displayModeBar": False})
+st.plotly_chart(seo_fig, use_container_width=True, config={"displayModeBar": False})
 
             # Details grid
             c_l, c_r = st.columns(2)
