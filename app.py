@@ -403,7 +403,10 @@ def make_gauge(value, title, color):
             },
         },
     ))
-    fig.update_layout(**PLOTLY_LAYOUT, height=200, margin=dict(l=20, r=20, t=30, b=10))
+    layout = PLOTLY_LAYOUT.copy()
+layout["margin"] = dict(l=20, r=20, t=30, b=10)
+
+fig.update_layout(**layout, height=200)
     return fig
 
 
