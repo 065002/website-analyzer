@@ -441,8 +441,6 @@ fig.update_layout(
     title=dict(text="Head-to-Head Metrics", font=dict(size=13, color="#64748b"), x=0),
     bargap=0.25, bargroupgap=0.08,
 )
-return fig
-
 
 def make_score_hbar(sites):
  domains = [s["domain"] for s in sites]
@@ -461,7 +459,6 @@ fig.update_layout(
     xaxis=dict(range=[0, 115], gridcolor="rgba(100,116,139,0.1)"),
     margin=dict(l=10, r=60, t=40, b=20),
 )
-return fig
 
 
 def make_treemap_tech(tech_comparison):
