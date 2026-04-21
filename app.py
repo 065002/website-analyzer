@@ -476,7 +476,7 @@ for domain, cats in tech_comparison.items():
             labels.append(item); parents.append(domain); values.append(1)
             colors_list.append(color_map.get(cat, "#64748b"))
 if len(labels) <= 2:
- return fig
+  return None 
 fig = go.Figure(go.Treemap(
     labels=labels, parents=parents,
     marker=dict(colors=colors_list, line=dict(width=1, color="#080b12")),
