@@ -687,8 +687,8 @@ with c_r:
             for h in seo.get("h2_tags", [])[:4]:
                 st.code(h, language=None)
 
-    if seo.get("structured_data"):
-            st.markdown('<p class="sec-head">JSON-LD Structured Data</p>', unsafe_allow_html=True)
+if seo.get("structured_data"):
+        st.markdown('<p class="sec-head">JSON-LD Structured Data</p>', unsafe_allow_html=True)
             for i, sd in enumerate(seo["structured_data"]):
                 with st.expander(f"Block {i+1} — {sd.get('@type','Unknown')}"):
                     st.json(sd)
