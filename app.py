@@ -1015,15 +1015,15 @@ with dl2:
         mime="text/csv")
 
 if go_btn and mode == "Competitor Analysis" and len(comp_urls) < 2:
-st.warning("Please enter at least 2 URLs (your site + 1 competitor) for competitor analysis.")
+ st.warning("Please enter at least 2 URLs (your site + 1 competitor) for competitor analysis.")
 
 if go_btn and mode == "Single Site" and not url_input.strip():
-st.warning("Please enter a URL to analyse.")
+ st.warning("Please enter a URL to analyse.")
 
 # ── Empty state ───────────────────────────────────────────────────────────────
 else:
-st.markdown("""
-<div class="empty-state">
+ st.markdown("""
+ <div class="empty-state">
     <div class="empty-icon">🌐</div>
     <div class="empty-title">Enter a URL above and click Analyse</div>
     <div class="empty-desc">
@@ -1035,7 +1035,7 @@ st.markdown("""
 
 # Feature pills
 st.markdown("""
-<div style="display:flex;flex-wrap:wrap;justify-content:center;gap:0.5rem;margin-top:1rem;">
+ <div style="display:flex;flex-wrap:wrap;justify-content:center;gap:0.5rem;margin-top:1rem;">
     <span class="badge bg-cyan">SEO Analysis</span>
     <span class="badge bg-purple">Tech Detection</span>
     <span class="badge bg-green">SSL Check</span>
