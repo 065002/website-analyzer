@@ -419,8 +419,6 @@ fig.update_layout(
     height=400,
     title=dict(text="Capability Radar", font=dict(size=13, color="#64748b"), x=0.5),
 )
-return fig
-
 
 def make_bar_comparison(comparison, metrics_to_show):
  domains = list(next(iter(comparison.values()))["values"].keys())
