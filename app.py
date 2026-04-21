@@ -668,7 +668,7 @@ st.plotly_chart(seo_fig, use_container_width=True, config={"displayModeBar": Fal
 
             # Details grid
 c_l, c_r = st.columns(2)
-            with c_l:
+  with c_l:
                 st.markdown('<p class="sec-head">Page Metadata</p>', unsafe_allow_html=True)
                 st.markdown(f"**Title** `({seo.get('title_length',0)} chars)`")
                 st.code(seo.get("title") or "(none)", language=None)
@@ -678,7 +678,7 @@ c_l, c_r = st.columns(2)
                 st.code(seo.get("canonical_url") or "(none)", language=None)
                 st.markdown("**Robots Meta**")
                 st.code(seo.get("robots_meta") or "(none)", language=None)
-            with c_r:
+    with c_r:
                 st.markdown('<p class="sec-head">Headings</p>', unsafe_allow_html=True)
                 st.markdown(f"**H1 Tags** — {seo.get('h1_count',0)} found")
                 for h in seo.get("h1_tags", [])[:3]:
