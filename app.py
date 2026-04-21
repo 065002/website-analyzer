@@ -338,7 +338,7 @@ button[data-baseweb="tab"] {
 """, unsafe_allow_html=True)
 
 from scripts.analyzer import analyze_website
-from scripts.competitor_analyzer.py import run_competitor_analysis
+from scripts.competitor_analyzer import run_competitor_analysis
 
 # ── Plotly theme helper ────────────────────────────────────────────────────────
 PLOTLY_LAYOUT = dict(
