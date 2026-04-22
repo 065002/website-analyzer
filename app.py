@@ -385,37 +385,24 @@ def make_3d_surface(sites, comparison):
             y=dict(show=True, color="rgba(255,255,255,0.06)", width=1),
             z=dict(show=True, color="rgba(255,255,255,0.04)", width=1),
         ),
-    ))
-   layout = _base_layout(
-       height=440,
-       title=dict(text="3D Metric Landscape", font=dict(size=13, color="#64748b"), x=0.5),
-      margin=dict(l=10, r=10, t=50, b=10),
-)
+       ))
 
-layout["scene"] = dict(
-    bgcolor="rgba(6,9,16,0)",
-    xaxis=dict(
-        tickvals=list(range(len(domains))),
-        ticktext=domains,
-        tickfont=dict(size=9, color="#64748b"),
-        gridcolor="rgba(100,116,139,0.12)",
-    ),
-    yaxis=dict(
-        tickvals=list(range(len(metric_labels))),
-        ticktext=metric_labels,
-        tickfont=dict(size=9, color="#64748b"),
-        gridcolor="rgba(100,116,139,0.12)",
-    ),
-    zaxis=dict(
-        range=[0, 110],
-        tickfont=dict(size=8, color="#64748b"),
-        gridcolor="rgba(100,116,139,0.12)",
-        title="Score",
-    ),
-)
+    layout = _base_layout(
+        height=440,
+        title=dict(text="3D Metric Landscape", font=dict(size=13, color="#64748b"), x=0.5),
+        margin=dict(l=10, r=10, t=50, b=10),
+    )
 
-fig.update_layout(**layout)
-return fig
+    layout["scene"] = dict(
+        bgcolor="rgba(6,9,16,0)",
+        xaxis=dict(...),
+        yaxis=dict(...),
+        zaxis=dict(...)
+    )
+
+    fig.update_layout(**layout)
+
+    return fig
         scene=dict(
             bgcolor="rgba(6,9,16,0.0)",
             xaxis=dict(
