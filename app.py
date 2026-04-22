@@ -312,7 +312,12 @@ def make_3d_score_bar(sites):
         )
     )
     return fig
-
+def hex_to_rgba(hex_color, alpha=0.08):
+    hex_color = hex_color.lstrip("#")
+    r = int(hex_color[0:2], 16)
+    g = int(hex_color[2:4], 16)
+    b = int(hex_color[4:6], 16)
+    return f"rgba({r},{g},{b},{alpha})"
 
 def make_radar(radar_data):
     dims = [d["dimension"] for d in radar_data[0]["dimensions"]]
