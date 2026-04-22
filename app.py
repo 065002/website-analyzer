@@ -393,13 +393,6 @@ def make_3d_surface(sites, comparison):
         margin=dict(l=10, r=10, t=50, b=10),
     )
 
-    layout["scene"] = dict(
-        bgcolor="rgba(6,9,16,0)",
-        xaxis=dict(...),
-        yaxis=dict(...),
-        zaxis=dict(...)
-    )
-
     fig.update_layout(**layout)
 
     return fig
