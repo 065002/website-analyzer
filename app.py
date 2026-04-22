@@ -789,8 +789,14 @@ if go_btn and mode == "Single Site" and url_input.strip():
             if seo.get("structured_data"):
                 st.markdown('<p class="sec-head">JSON-LD Structured Data</p>', unsafe_allow_html=True)
                 for i, sd in enumerate(seo["structured_data"]):
-                    with st.expander(f"Block {i+1} — {sd.get('@type','Unknown')}"):
-                        st.json(sd)
+                    if isinstance(sd, dict):
+                       title = sd.get("@type", "Unknown")
+                         else:
+                           title = "Unknown"
+
+  with st.expander(f"Block {i+1} – {title}"):
+    st.json(sd)
+                        
 
     # ── Tech Stack ────────────────────────────────────────────────────────
     with t_tech:
