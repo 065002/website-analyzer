@@ -423,8 +423,7 @@ def make_3d_surface(sites, comparison):
                 titlefont=dict(size=9, color="#64748b"),
             ),
             camera=dict(eye=dict(x=1.6, y=-1.6, z=1.1)),
-        ),
-    )
+        )
     return fig
 
 
