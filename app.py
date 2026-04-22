@@ -387,9 +387,9 @@ def make_3d_surface(sites, comparison):
         ),
     ))
    layout = _base_layout(
-    height=440,
-    title=dict(text="3D Metric Landscape", font=dict(size=13, color="#64748b"), x=0.5),
-    margin=dict(l=10, r=10, t=50, b=10),
+       height=440,
+       title=dict(text="3D Metric Landscape", font=dict(size=13, color="#64748b"), x=0.5),
+      margin=dict(l=10, r=10, t=50, b=10),
 )
 
 layout["scene"] = dict(
@@ -1090,8 +1090,8 @@ elif go_btn and mode == "Competitor Analysis" and len(comp_urls) >= 2:
 
     # Leaderboard bar
     st.markdown('<p class="sec-head">Overall Health Scores</p>', unsafe_allow_html=True)
-    st.plotly_chart(make_3d_score_bar(sites), use_container_width=True, config={"displayModeBar": False})
-
+   color = COLORS[i % len(COLORS)]
+fillcolor = f"rgba({int(color[1:3],16)},{int(color[3:5],16)},{int(color[5:7],16)},0.08)"
     # Score cards
     accents = [
         "linear-gradient(90deg,#38bdf8,#818cf8)",
