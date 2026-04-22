@@ -403,7 +403,7 @@ def make_3d_surface(sites, comparison):
     fig.update_layout(**layout)
 
     return fig
-        scene=dict(
+    scene=dict(
             bgcolor="rgba(6,9,16,0.0)",
             xaxis=dict(
                 tickvals=list(range(len(domains))), ticktext=domains,
