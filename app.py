@@ -794,8 +794,8 @@ if go_btn and mode == "Single Site" and url_input.strip():
             else:
                            title = "Unknown"
 
-  with st.expander(f"Block {i+1} – {title}"):
-    st.json(sd)
+                  with st.expander(f"Block {i+1} – {title}"):
+                     st.json(sd)
                         
 
     # ── Tech Stack ────────────────────────────────────────────────────────
