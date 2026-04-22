@@ -791,7 +791,7 @@ if go_btn and mode == "Single Site" and url_input.strip():
                 for i, sd in enumerate(seo["structured_data"]):
                     if isinstance(sd, dict):
                        title = sd.get("@type", "Unknown")
-                         else:
+            else:
                            title = "Unknown"
 
   with st.expander(f"Block {i+1} – {title}"):
