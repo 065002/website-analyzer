@@ -205,7 +205,7 @@ button[data-baseweb="tab"] {
 
 from scripts.analyzer import analyze_website
 from scripts.competitor_analyzer import run_competitor_analysis
-from scripts.extra_checks import check_backlink_profile, check_ai_visibility
+from scripts.Extra checks import check_backlink_profile, check_ai_visibility
 
 # ── Plotly helpers — NO **PLOTLY_LAYOUT unpacking to avoid key conflicts ───────
 COLORS = ["#38bdf8", "#a78bfa", "#34d399", "#fbbf24", "#f87171", "#fb923c", "#2dd4bf"]
