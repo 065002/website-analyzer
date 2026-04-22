@@ -313,11 +313,14 @@ def make_3d_score_bar(sites):
     )
     return fig
 def hex_to_rgba(hex_color, alpha=0.08):
-    hex_color = hex_color.lstrip("#")
-    r = int(hex_color[0:2], 16)
-    g = int(hex_color[2:4], 16)
-    b = int(hex_color[4:6], 16)
-    return f"rgba({r},{g},{b},{alpha})"
+    try:
+        hex_color = hex_color.lstrip("#")
+        r = int(hex_color[0:2], 16)
+        g = int(hex_color[2:4], 16)
+        b = int(hex_color[4:6], 16)
+        return f"rgba({r},{g},{b},{alpha})"
+    except:
+        return "rgba(100,116,139,0.2)"  
 
 def make_radar(radar_data):
     dims = [d["dimension"] for d in radar_data[0]["dimensions"]]
@@ -330,7 +333,7 @@ def make_radar(radar_data):
             r=vals, theta=dims + [dims[0]],
             fill="toself", name=site["domain"],
             line=dict(color=color, width=2),
-            fillcolor=color.replace("#", "rgba(").rstrip(")") + ",0.07)" if color.startswith("#") else color,
+            fillcolor=hex_to_rgba(color)
         ))
     fig.update_layout(
         **_base_layout(
