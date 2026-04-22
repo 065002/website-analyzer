@@ -793,7 +793,7 @@ if go_btn and mode == "Single Site" and url_input.strip():
                        title = sd.get("@type", "Unknown")
             else:
                            title = "Unknown"
-                  with st.expander(f"Block {i+1} – {title}"):
+    with st.expander(f"Block {i+1} – {title}"):
     st.json(sd)
                         
 
