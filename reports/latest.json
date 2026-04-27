@@ -1,0 +1,174 @@
+[
+  {
+    "meta": {
+      "analysed_url": "https://example.com",
+      "domain": "example.com",
+      "timestamp": "2026-04-27T10:51:51.467562Z",
+      "overall_score": 29
+    },
+    "seo": {
+      "url": "https://example.com",
+      "final_url": "https://example.com/",
+      "status_code": 200,
+      "load_time_seconds": 0.064,
+      "page_size_kb": 0.52,
+      "title": "Example Domain",
+      "title_length": 14,
+      "meta_description": null,
+      "meta_description_length": 0,
+      "meta_keywords": null,
+      "robots_meta": null,
+      "h1_tags": [
+        "Example Domain"
+      ],
+      "h1_count": 1,
+      "h2_tags": [],
+      "h2_count": 0,
+      "canonical_url": null,
+      "structured_data": [],
+      "structured_data_count": 0,
+      "internal_links": 0,
+      "external_links": 1,
+      "total_images": 0,
+      "images_with_alt": 0,
+      "images_missing_alt": 0,
+      "word_count": 21
+    },
+    "technologies": {
+      "frontend": [],
+      "cms": [],
+      "analytics": [],
+      "hosting": [
+        "Cloudflare"
+      ],
+      "backend": [],
+      "cdn": [
+        "Cloudflare"
+      ],
+      "server": "cloudflare",
+      "powered_by": null,
+      "content_type": "text/html",
+      "raw_headers": {
+        "Date": "Mon, 27 Apr 2026 10:51:51 GMT",
+        "Content-Type": "text/html",
+        "Transfer-Encoding": "chunked",
+        "Connection": "keep-alive",
+        "Server": "cloudflare",
+        "last-modified": "Sat, 25 Apr 2026 11:01:06 GMT",
+        "allow": "GET, HEAD",
+        "Age": "24",
+        "cf-cache-status": "HIT",
+        "Content-Encoding": "gzip",
+        "CF-RAY": "9f2d463f6d43dec3-LAX"
+      }
+    },
+    "ssl": {
+      "valid": true,
+      "issuer": "CLOUDFLARE, INC.",
+      "subject": "example.com",
+      "expiry_date": "2026-07-01",
+      "days_remaining": 65,
+      "san_count": 2,
+      "sans": [
+        "example.com",
+        "*.example.com"
+      ]
+    },
+    "security_headers": {
+      "score": 0,
+      "https_enabled": true,
+      "headers_found": {},
+      "headers_missing": {
+        "strict-transport-security": {
+          "label": "HSTS",
+          "description": "Forces HTTPS and protects against downgrade attacks.",
+          "weight": 20
+        },
+        "content-security-policy": {
+          "label": "Content-Security-Policy",
+          "description": "Prevents XSS, clickjacking, and code-injection attacks.",
+          "weight": 25
+        },
+        "x-frame-options": {
+          "label": "X-Frame-Options",
+          "description": "Prevents the page from being embedded in iframes.",
+          "weight": 15
+        },
+        "x-content-type-options": {
+          "label": "X-Content-Type-Options",
+          "description": "Prevents MIME-type sniffing by browsers.",
+          "weight": 15
+        },
+        "referrer-policy": {
+          "label": "Referrer-Policy",
+          "description": "Controls referrer information included with requests.",
+          "weight": 10
+        },
+        "permissions-policy": {
+          "label": "Permissions-Policy",
+          "description": "Controls which browser features the page can use.",
+          "weight": 10
+        },
+        "x-xss-protection": {
+          "label": "X-XSS-Protection",
+          "description": "Legacy XSS filter header.",
+          "weight": 5
+        }
+      },
+      "found_count": 0,
+      "missing_count": 7,
+      "total_checked": 7,
+      "raw_security_headers": {}
+    },
+    "dns": {
+      "A": [
+        "104.20.23.154",
+        "172.66.147.243"
+      ],
+      "AAAA": [
+        "2606:4700:10::ac42:93f3",
+        "2606:4700:10::6814:179a"
+      ],
+      "MX": [
+        "0 ."
+      ],
+      "TXT": [
+        "\"_k2n1y4vw3qtb4skdx9e7dxt97qrmmq9\"",
+        "\"v=spf1 -all\""
+      ],
+      "NS": [
+        "elliott.ns.cloudflare.com.",
+        "hera.ns.cloudflare.com."
+      ],
+      "CNAME": [],
+      "ip_addresses": [
+        "104.20.23.154",
+        "172.66.147.243"
+      ],
+      "ipv6_addresses": [
+        "2606:4700:10::ac42:93f3",
+        "2606:4700:10::6814:179a"
+      ],
+      "nameservers": [
+        "elliott.ns.cloudflare.com.",
+        "hera.ns.cloudflare.com."
+      ],
+      "mail_servers": [
+        "0 ."
+      ]
+    },
+    "recommendations": {
+      "critical_issues": [
+        "Missing meta description \u2014 reduces click-through rate from search results",
+        "Very poor security header score (<30) \u2014 site vulnerable to common web attacks",
+        "Missing Content-Security-Policy header \u2014 vulnerable to XSS attacks"
+      ],
+      "quick_wins": [
+        "Expand title tag to 30\u201360 characters (currently 14)",
+        "Add a canonical URL tag to prevent duplicate content issues",
+        "Add JSON-LD structured data to improve rich snippet eligibility",
+        "Add H2 subheadings to improve content structure and keyword relevance"
+      ]
+    }
+  }
+]
