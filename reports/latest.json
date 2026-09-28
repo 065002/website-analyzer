@@ -3,25 +3,23 @@
     "meta": {
       "analysed_url": "https://example.com",
       "domain": "example.com",
-      "timestamp": "2026-09-21T15:23:57.379018Z",
-      "overall_score": 29
+      "timestamp": "2026-09-28T17:05:58.740979Z",
+      "overall_score": 20
     },
     "seo": {
       "url": "https://example.com",
       "final_url": "https://example.com/",
       "status_code": 200,
-      "load_time_seconds": 0.084,
-      "page_size_kb": 0.55,
+      "load_time_seconds": 0.067,
+      "page_size_kb": 0.7,
       "title": "Example Domain",
       "title_length": 14,
       "meta_description": null,
       "meta_description_length": 0,
       "meta_keywords": null,
       "robots_meta": null,
-      "h1_tags": [
-        "Example Domain"
-      ],
-      "h1_count": 1,
+      "h1_tags": [],
+      "h1_count": 0,
       "h2_tags": [],
       "h2_count": 0,
       "canonical_url": null,
@@ -32,7 +30,7 @@
       "total_images": 0,
       "images_with_alt": 0,
       "images_missing_alt": 0,
-      "word_count": 21
+      "word_count": 29
     },
     "technologies": {
       "frontend": [],
@@ -47,27 +45,27 @@
       ],
       "server": "cloudflare",
       "powered_by": null,
-      "content_type": "text/html",
+      "content_type": "text/html; charset=utf-8",
       "raw_headers": {
-        "Date": "Mon, 21 Sep 2026 15:23:57 GMT",
-        "Content-Type": "text/html",
+        "Date": "Mon, 28 Sep 2026 17:05:58 GMT",
+        "Content-Type": "text/html; charset=utf-8",
         "Transfer-Encoding": "chunked",
         "Connection": "keep-alive",
         "Server": "cloudflare",
-        "last-modified": "Tue, 15 Sep 2026 23:41:26 GMT",
+        "last-modified": "Mon, 28 Sep 2026 16:19:32 GMT",
         "allow": "GET, HEAD",
-        "Age": "2",
+        "Age": "2103",
         "cf-cache-status": "HIT",
         "Content-Encoding": "gzip",
-        "CF-RAY": "a3ea12f47ae66e22-LAX"
+        "CF-RAY": "a4245606cf5bd69d-IAD"
       }
     },
     "ssl": {
       "valid": true,
       "issuer": "SSL Corporation",
       "subject": "example.com",
-      "expiry_date": "2026-10-27",
-      "days_remaining": 36,
+      "expiry_date": "2026-12-25",
+      "days_remaining": 88,
       "san_count": 2,
       "sans": [
         "example.com",
@@ -122,8 +120,8 @@
     },
     "dns": {
       "A": [
-        "104.20.23.154",
-        "172.66.147.243"
+        "172.66.147.243",
+        "104.20.23.154"
       ],
       "AAAA": [
         "2606:4700:10::6814:179a",
@@ -142,8 +140,8 @@
       ],
       "CNAME": [],
       "ip_addresses": [
-        "104.20.23.154",
-        "172.66.147.243"
+        "172.66.147.243",
+        "104.20.23.154"
       ],
       "ipv6_addresses": [
         "2606:4700:10::6814:179a",
@@ -160,6 +158,7 @@
     "recommendations": {
       "critical_issues": [
         "Missing meta description \u2014 reduces click-through rate from search results",
+        "No H1 tag found \u2014 critical for on-page SEO",
         "Very poor security header score (<30) \u2014 site vulnerable to common web attacks",
         "Missing Content-Security-Policy header \u2014 vulnerable to XSS attacks"
       ],
