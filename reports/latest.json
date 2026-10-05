@@ -3,15 +3,15 @@
     "meta": {
       "analysed_url": "https://example.com",
       "domain": "example.com",
-      "timestamp": "2026-09-28T17:05:58.740979Z",
+      "timestamp": "2026-10-05T17:30:24.158407Z",
       "overall_score": 20
     },
     "seo": {
       "url": "https://example.com",
       "final_url": "https://example.com/",
       "status_code": 200,
-      "load_time_seconds": 0.067,
-      "page_size_kb": 0.7,
+      "load_time_seconds": 0.093,
+      "page_size_kb": 0.56,
       "title": "Example Domain",
       "title_length": 14,
       "meta_description": null,
@@ -26,11 +26,11 @@
       "structured_data": [],
       "structured_data_count": 0,
       "internal_links": 0,
-      "external_links": 1,
+      "external_links": 0,
       "total_images": 0,
       "images_with_alt": 0,
       "images_missing_alt": 0,
-      "word_count": 29
+      "word_count": 27
     },
     "technologies": {
       "frontend": [],
@@ -47,17 +47,18 @@
       "powered_by": null,
       "content_type": "text/html; charset=utf-8",
       "raw_headers": {
-        "Date": "Mon, 28 Sep 2026 17:05:58 GMT",
+        "Date": "Mon, 05 Oct 2026 17:30:24 GMT",
         "Content-Type": "text/html; charset=utf-8",
         "Transfer-Encoding": "chunked",
         "Connection": "keep-alive",
         "Server": "cloudflare",
-        "last-modified": "Mon, 28 Sep 2026 16:19:32 GMT",
+        "last-modified": "Fri, 02 Oct 2026 16:11:02 GMT",
         "allow": "GET, HEAD",
-        "Age": "2103",
+        "Age": "4586",
         "cf-cache-status": "HIT",
         "Content-Encoding": "gzip",
-        "CF-RAY": "a4245606cf5bd69d-IAD"
+        "CF-RAY": "a45e276dfe758423-STL",
+        "alt-svc": "h3=\":443\"; ma=86400"
       }
     },
     "ssl": {
@@ -65,7 +66,7 @@
       "issuer": "SSL Corporation",
       "subject": "example.com",
       "expiry_date": "2026-12-25",
-      "days_remaining": 88,
+      "days_remaining": 81,
       "san_count": 2,
       "sans": [
         "example.com",
@@ -120,8 +121,8 @@
     },
     "dns": {
       "A": [
-        "172.66.147.243",
-        "104.20.23.154"
+        "104.20.23.154",
+        "172.66.147.243"
       ],
       "AAAA": [
         "2606:4700:10::6814:179a",
@@ -140,8 +141,8 @@
       ],
       "CNAME": [],
       "ip_addresses": [
-        "172.66.147.243",
-        "104.20.23.154"
+        "104.20.23.154",
+        "172.66.147.243"
       ],
       "ipv6_addresses": [
         "2606:4700:10::6814:179a",
