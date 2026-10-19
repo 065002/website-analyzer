@@ -3,14 +3,14 @@
     "meta": {
       "analysed_url": "https://example.com",
       "domain": "example.com",
-      "timestamp": "2026-10-12T18:17:26.792559Z",
+      "timestamp": "2026-10-19T15:56:10.234679Z",
       "overall_score": 20
     },
     "seo": {
       "url": "https://example.com",
       "final_url": "https://example.com/",
       "status_code": 200,
-      "load_time_seconds": 0.066,
+      "load_time_seconds": 0.048,
       "page_size_kb": 0.56,
       "title": "Example Domain",
       "title_length": 14,
@@ -47,17 +47,17 @@
       "powered_by": null,
       "content_type": "text/html; charset=utf-8",
       "raw_headers": {
-        "Date": "Mon, 12 Oct 2026 18:17:26 GMT",
+        "Date": "Mon, 19 Oct 2026 15:56:10 GMT",
         "Content-Type": "text/html; charset=utf-8",
         "Transfer-Encoding": "chunked",
         "Connection": "keep-alive",
         "Server": "cloudflare",
-        "last-modified": "Fri, 09 Oct 2026 20:18:28 GMT",
+        "last-modified": "Tue, 13 Oct 2026 20:08:28 GMT",
         "allow": "GET, HEAD",
-        "Age": "1",
+        "Age": "4764",
         "cf-cache-status": "HIT",
         "Content-Encoding": "gzip",
-        "CF-RAY": "a49819f71a4d9917-SEA",
+        "CF-RAY": "a4d0f8a47fcb163e-ORD",
         "alt-svc": "h3=\":443\"; ma=86400"
       }
     },
@@ -66,7 +66,7 @@
       "issuer": "SSL Corporation",
       "subject": "example.com",
       "expiry_date": "2026-12-25",
-      "days_remaining": 74,
+      "days_remaining": 67,
       "san_count": 2,
       "sans": [
         "example.com",
@@ -121,12 +121,12 @@
     },
     "dns": {
       "A": [
-        "172.66.147.243",
-        "104.20.23.154"
+        "104.20.23.154",
+        "172.66.147.243"
       ],
       "AAAA": [
-        "2606:4700:10::6814:179a",
-        "2606:4700:10::ac42:93f3"
+        "2606:4700:10::ac42:93f3",
+        "2606:4700:10::6814:179a"
       ],
       "MX": [
         "0 ."
@@ -141,12 +141,12 @@
       ],
       "CNAME": [],
       "ip_addresses": [
-        "172.66.147.243",
-        "104.20.23.154"
+        "104.20.23.154",
+        "172.66.147.243"
       ],
       "ipv6_addresses": [
-        "2606:4700:10::6814:179a",
-        "2606:4700:10::ac42:93f3"
+        "2606:4700:10::ac42:93f3",
+        "2606:4700:10::6814:179a"
       ],
       "nameservers": [
         "hera.ns.cloudflare.com.",
