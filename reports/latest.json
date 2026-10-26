@@ -3,14 +3,14 @@
     "meta": {
       "analysed_url": "https://example.com",
       "domain": "example.com",
-      "timestamp": "2026-10-19T15:56:10.234679Z",
+      "timestamp": "2026-10-26T15:33:02.787828Z",
       "overall_score": 20
     },
     "seo": {
       "url": "https://example.com",
       "final_url": "https://example.com/",
       "status_code": 200,
-      "load_time_seconds": 0.048,
+      "load_time_seconds": 0.139,
       "page_size_kb": 0.56,
       "title": "Example Domain",
       "title_length": 14,
@@ -47,17 +47,17 @@
       "powered_by": null,
       "content_type": "text/html; charset=utf-8",
       "raw_headers": {
-        "Date": "Mon, 19 Oct 2026 15:56:10 GMT",
+        "Date": "Mon, 26 Oct 2026 15:33:02 GMT",
         "Content-Type": "text/html; charset=utf-8",
         "Transfer-Encoding": "chunked",
         "Connection": "keep-alive",
         "Server": "cloudflare",
-        "last-modified": "Tue, 13 Oct 2026 20:08:28 GMT",
+        "last-modified": "Sat, 24 Oct 2026 11:34:40 GMT",
         "allow": "GET, HEAD",
-        "Age": "4764",
+        "Age": "11422",
         "cf-cache-status": "HIT",
         "Content-Encoding": "gzip",
-        "CF-RAY": "a4d0f8a47fcb163e-ORD",
+        "CF-RAY": "a50a84659837a33e-SEA",
         "alt-svc": "h3=\":443\"; ma=86400"
       }
     },
@@ -66,7 +66,7 @@
       "issuer": "SSL Corporation",
       "subject": "example.com",
       "expiry_date": "2026-12-25",
-      "days_remaining": 67,
+      "days_remaining": 60,
       "san_count": 2,
       "sans": [
         "example.com",
@@ -121,8 +121,8 @@
     },
     "dns": {
       "A": [
-        "104.20.23.154",
-        "172.66.147.243"
+        "172.66.147.243",
+        "104.20.23.154"
       ],
       "AAAA": [
         "2606:4700:10::ac42:93f3",
@@ -141,8 +141,8 @@
       ],
       "CNAME": [],
       "ip_addresses": [
-        "104.20.23.154",
-        "172.66.147.243"
+        "172.66.147.243",
+        "104.20.23.154"
       ],
       "ipv6_addresses": [
         "2606:4700:10::ac42:93f3",
