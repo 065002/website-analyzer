@@ -3,14 +3,14 @@
     "meta": {
       "analysed_url": "https://example.com",
       "domain": "example.com",
-      "timestamp": "2026-10-26T15:33:02.787828Z",
+      "timestamp": "2026-11-02T18:54:52.271370Z",
       "overall_score": 20
     },
     "seo": {
       "url": "https://example.com",
       "final_url": "https://example.com/",
       "status_code": 200,
-      "load_time_seconds": 0.139,
+      "load_time_seconds": 0.07,
       "page_size_kb": 0.56,
       "title": "Example Domain",
       "title_length": 14,
@@ -47,17 +47,17 @@
       "powered_by": null,
       "content_type": "text/html; charset=utf-8",
       "raw_headers": {
-        "Date": "Mon, 26 Oct 2026 15:33:02 GMT",
+        "Date": "Mon, 02 Nov 2026 18:54:52 GMT",
         "Content-Type": "text/html; charset=utf-8",
         "Transfer-Encoding": "chunked",
         "Connection": "keep-alive",
         "Server": "cloudflare",
-        "last-modified": "Sat, 24 Oct 2026 11:34:40 GMT",
+        "last-modified": "Sun, 01 Nov 2026 22:43:12 GMT",
         "allow": "GET, HEAD",
-        "Age": "11422",
+        "Age": "0",
         "cf-cache-status": "HIT",
         "Content-Encoding": "gzip",
-        "CF-RAY": "a50a84659837a33e-SEA",
+        "CF-RAY": "a54559a96b2fc595-IAD",
         "alt-svc": "h3=\":443\"; ma=86400"
       }
     },
@@ -66,7 +66,7 @@
       "issuer": "SSL Corporation",
       "subject": "example.com",
       "expiry_date": "2026-12-25",
-      "days_remaining": 60,
+      "days_remaining": 53,
       "san_count": 2,
       "sans": [
         "example.com",
@@ -121,8 +121,8 @@
     },
     "dns": {
       "A": [
-        "172.66.147.243",
-        "104.20.23.154"
+        "104.20.23.154",
+        "172.66.147.243"
       ],
       "AAAA": [
         "2606:4700:10::ac42:93f3",
@@ -141,8 +141,8 @@
       ],
       "CNAME": [],
       "ip_addresses": [
-        "172.66.147.243",
-        "104.20.23.154"
+        "104.20.23.154",
+        "172.66.147.243"
       ],
       "ipv6_addresses": [
         "2606:4700:10::ac42:93f3",
