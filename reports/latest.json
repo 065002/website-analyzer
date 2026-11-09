@@ -3,14 +3,14 @@
     "meta": {
       "analysed_url": "https://example.com",
       "domain": "example.com",
-      "timestamp": "2026-11-02T18:54:52.271370Z",
+      "timestamp": "2026-11-09T19:15:39.586943Z",
       "overall_score": 20
     },
     "seo": {
       "url": "https://example.com",
       "final_url": "https://example.com/",
       "status_code": 200,
-      "load_time_seconds": 0.07,
+      "load_time_seconds": 0.052,
       "page_size_kb": 0.56,
       "title": "Example Domain",
       "title_length": 14,
@@ -47,17 +47,17 @@
       "powered_by": null,
       "content_type": "text/html; charset=utf-8",
       "raw_headers": {
-        "Date": "Mon, 02 Nov 2026 18:54:52 GMT",
+        "Date": "Mon, 09 Nov 2026 19:15:39 GMT",
         "Content-Type": "text/html; charset=utf-8",
         "Transfer-Encoding": "chunked",
         "Connection": "keep-alive",
         "Server": "cloudflare",
-        "last-modified": "Sun, 01 Nov 2026 22:43:12 GMT",
+        "last-modified": "Thu, 05 Nov 2026 21:17:41 GMT",
         "allow": "GET, HEAD",
-        "Age": "0",
+        "Age": "532",
         "cf-cache-status": "HIT",
         "Content-Encoding": "gzip",
-        "CF-RAY": "a54559a96b2fc595-IAD",
+        "CF-RAY": "a57f25bcf946ace0-ORD",
         "alt-svc": "h3=\":443\"; ma=86400"
       }
     },
@@ -66,7 +66,7 @@
       "issuer": "SSL Corporation",
       "subject": "example.com",
       "expiry_date": "2026-12-25",
-      "days_remaining": 53,
+      "days_remaining": 46,
       "san_count": 2,
       "sans": [
         "example.com",
@@ -121,8 +121,8 @@
     },
     "dns": {
       "A": [
-        "104.20.23.154",
-        "172.66.147.243"
+        "172.66.147.243",
+        "104.20.23.154"
       ],
       "AAAA": [
         "2606:4700:10::ac42:93f3",
@@ -141,8 +141,8 @@
       ],
       "CNAME": [],
       "ip_addresses": [
-        "104.20.23.154",
-        "172.66.147.243"
+        "172.66.147.243",
+        "104.20.23.154"
       ],
       "ipv6_addresses": [
         "2606:4700:10::ac42:93f3",
