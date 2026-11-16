@@ -3,14 +3,14 @@
     "meta": {
       "analysed_url": "https://example.com",
       "domain": "example.com",
-      "timestamp": "2026-11-09T19:15:39.586943Z",
+      "timestamp": "2026-11-16T18:59:15.202019Z",
       "overall_score": 20
     },
     "seo": {
       "url": "https://example.com",
       "final_url": "https://example.com/",
       "status_code": 200,
-      "load_time_seconds": 0.052,
+      "load_time_seconds": 0.04,
       "page_size_kb": 0.56,
       "title": "Example Domain",
       "title_length": 14,
@@ -47,17 +47,17 @@
       "powered_by": null,
       "content_type": "text/html; charset=utf-8",
       "raw_headers": {
-        "Date": "Mon, 09 Nov 2026 19:15:39 GMT",
+        "Date": "Mon, 16 Nov 2026 18:59:15 GMT",
         "Content-Type": "text/html; charset=utf-8",
         "Transfer-Encoding": "chunked",
         "Connection": "keep-alive",
         "Server": "cloudflare",
-        "last-modified": "Thu, 05 Nov 2026 21:17:41 GMT",
+        "last-modified": "Mon, 16 Nov 2026 00:30:20 GMT",
         "allow": "GET, HEAD",
-        "Age": "532",
+        "Age": "9",
         "cf-cache-status": "HIT",
         "Content-Encoding": "gzip",
-        "CF-RAY": "a57f25bcf946ace0-ORD",
+        "CF-RAY": "a5b8bb547e9d4e70-IAD",
         "alt-svc": "h3=\":443\"; ma=86400"
       }
     },
@@ -66,7 +66,7 @@
       "issuer": "SSL Corporation",
       "subject": "example.com",
       "expiry_date": "2026-12-25",
-      "days_remaining": 46,
+      "days_remaining": 39,
       "san_count": 2,
       "sans": [
         "example.com",
@@ -121,8 +121,8 @@
     },
     "dns": {
       "A": [
-        "172.66.147.243",
-        "104.20.23.154"
+        "104.20.23.154",
+        "172.66.147.243"
       ],
       "AAAA": [
         "2606:4700:10::ac42:93f3",
@@ -141,8 +141,8 @@
       ],
       "CNAME": [],
       "ip_addresses": [
-        "172.66.147.243",
-        "104.20.23.154"
+        "104.20.23.154",
+        "172.66.147.243"
       ],
       "ipv6_addresses": [
         "2606:4700:10::ac42:93f3",
